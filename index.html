@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/style.css">
+</head>
+<body>
+
+<div class="preload">
+    <div class="made-by">
+        <p class="inner-text">
+            Made by Aleksander Karakay
+        </p>
+    </div>
+</div>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt="Logo"/></a>
+        </div>
+        <nav class="nav-head">
+            <ul>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Balance</a>
+                    <div class="balance">$40.99/<span class="balance-second">$199.50</span></div>
+                </li>
+            </ul>
+        </nav>
+        <!--Mobile menu-->
+            <div class="nav-mob-toggle">
+                <p>Menu</p>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        <!--Mobile menu end-->
+        <div class="top-profile-link">
+                <div class="top-profile-img">
+                    <img src="img/user.png" alt="Image_profile"/>
+                </div>
+                <div class="top-profile-arrow"></div>
+            <div class="top-profile-menu">
+                <a href="#" class="top-profile-item email">someemail@mail.com</a>
+                <a href="#" class="top-profile-item profile">Profile & Settings</a>
+                <a href="#" class="top-profile-item referals">Referals</a>
+                <a href="#" class="top-profile-item log-out">Log out</a>
+            </div>
+        </div>
+            <button class="btn-new-order">
+                <span class="plus">+</span> New Order
+            </button>
+        <div style="clear:both"></div>
+    </div>
+</header>
+<!--Mobile menu list-->
+<div class="mobile-menu-conteiner">
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#" class="mobile-item">Orders</a></li>
+            <li><a href="#" class="mobile-item">Support</a></li>
+            <li><a href="#" class="mobile-item">Balance</a>
+                <div class="mobile-item-balance">$40.99/<span class="balance-second">$199.50</span></div>
+            </li>
+            <li><a href="#" class="mobile-item"><span>+</span>New Order</a></li>
+            <li><a href="#" class="mobile-item mob-email">someemail@mail.com</a></li>
+            <li><a href="#" class="mobile-item mob-profile">Profile & Settings</a></li>
+            <li><a href="#" class="mobile-item mob-referal">Referals</a></li>
+            <li><a href="#" class="mobile-item mob-log-out">Log out</a></li>
+        </ul>
+    </nav>
+</div>
+<!--End mobile menu list-->
+
+<!--Main content-->
+<div class="content">
+    <div class="content-head">
+            <div class="inner-text-head">
+                My orders
+            </div>
+    </div>
+    <!--Body content-->
+    <div class="content-body">
+        <div class="tabs">
+            <ul>
+                <li class="tab active"><span>Recent</span></li>
+                <li class="tab"><span>Finished</span></li>
+                <li class="tab"><span>Canceled</span></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        What is the State Regular? What is it so long name of the topic?
+                        Oh, sometimes it happens.
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Progress (1 of 5 pages)</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar progress"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">Dec 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img" src="./img/writer_img.png" alt="Img_writter"/>
+                        <div class="writer-name">
+                            <a href="#">writer_name</a>
+                            <p class="writer-order">553 completed orders</p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        Microeconomic
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Bidding</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar bidding"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">May 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img num" src="./img/25.png" alt="Number-25"/>
+                        <span class="bids">bids</span>
+                        <div class="writer-name">
+                            <a href="#"></a>
+                            <p class="writer-order"></p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        What is the State Regulations?
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Cancelled automatically</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar cancel"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">Jun 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img" src="./img/writer_img.png" alt="Img_writter"/>
+                        <img class="online" src="./img/online.png"/>
+                        <div class="writer-name">
+                            <a href="#">writer</a>
+                            <p class="writer-order">1043 completed orders</p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        Some very interesting tipic name
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Progress (1 of 5 pages)</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar progress"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">Jul 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img" src="./img/writer_img.png" alt="Img_writter"/>
+                        <div class="writer-name">
+                            <a href="#">Long_writer_name</a>
+                            <p class="writer-order">3 completed orders</p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        WOW!
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Bidding</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar bidding"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">Aug 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img num" src="./img/25.png" alt="Number-25"/>
+                        <span class="bids">bids</span>
+                        <div class="writer-name">
+                            <a href="#"></a>
+                            <p class="writer-order"></p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        I don`t know what to write here :(
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Progress (1 of 5 pages)</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar progress"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">Sep 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img" src="./img/writer_img.png" alt="Img_writter"/>
+                        <img class="online" src="./img/online.png"/>
+                        <div class="writer-name">
+                            <a href="#">Long_writer_name</a>
+                            <p class="writer-order">55 completed orders</p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-inner-content">
+                <div class="tab-item">
+                    <div class="item tab-item-name">
+                        The last!
+                        <p>#2453534, Phychology and Education, Argumentative essay</p>
+                    </div>
+                    <div class="item tab-item-progress">
+                        <span class="progress-title">Finished</span>
+                        <div class="tab-progress-bar">
+                            <div class="inner-progress-bar finished"></div>
+                        </div>
+                    </div>
+                    <div class="item tab-item-deadline">
+                        <span class="deadline-title">Deadline in 4 days</span>
+                        <p class="deadline-date">May 28, 11:59 AM</p>
+                    </div>
+                    <div class="item tab-item-writers-info">
+                        <img class="writer-img num" src="./img/25.png" alt="Number-25"/>
+                        <span class="bids">bids</span>
+                        <div class="writer-name">
+                            <a href="#"></a>
+                            <p class="writer-order"></p>
+                        </div>
+                    </div>
+                    <div class="item tab-item-money">
+                        <span class="money-count">$1250</span>
+                        <p class="money-paid">$100 paid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End body content-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-navigator">
+                <nav>
+                    <ul class="footer-info">
+                        <li><a href="#" class="footer-item">About Us</a></li>
+                        <li><a href="#" class="footer-item">How it works?</a></li>
+                        <li><a href="#" class="footer-item">FAQ for Customers</a></li>
+                        <li><a href="#" class="footer-item">Terms & Conditions</a></li>
+                        <li><a href="#" class="footer-item">Money Back Guarantee</a></li>
+                    </ul>
+                    <ul class="footer-info privacy">
+                        <li><a href="#" class="footer-item">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-item">Contact Us</a></li>
+                        <li><a href="#" class="footer-item">User Reviews</a></li>
+                        <li><a href="#" class="footer-item">Topic Suggestion</a></li>
+                        <li><a href="#" class="footer-item">Confidentality Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-link">
+                <div class="powered-by">
+                    <a href="#"><img src="./img/norton.png" alt="Made by Norton"/></a>
+                </div>
+                <div class="footer-link-download">
+                    <a href="#"><img src="./img/appstore.png" alt="AppStore"/></a>
+                    <a href="#"><img src="./img/gplay.png" alt="GooglePlay"/></a>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+            <div class="footer-copyright">© 2011 - 2017. ProWrite</div>
+        </div>
+    </footer>
+    <!--End footer-->
+</div>
+<!--End main content-->
+
+<script src="./index.js"></script>
+</body>
+</html>
