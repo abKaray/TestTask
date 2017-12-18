@@ -118,6 +118,12 @@ ul{
     margin-left: 54px;
     font-size: 14px;
     font-weight: 700;
+    a{
+      transition: .5s all;
+      &:hover{
+        color: #1564c0;
+      }
+    }
   }
   .balance{
     @include balance;
@@ -132,33 +138,13 @@ ul{
     margin: 1px 0 0 20px;
     cursor: pointer;
   }
-  .top-profile-img{
-    background: #f7f7f7;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    position: relative;
-    border-radius: 20px;
-    display: inline-block;
-    img{
-      padding-top: 7px;
-    }
-  }
-  .top-profile-arrow{
-    background-image: url("../img/arrow.png");
-    height: 5px;
-    margin: 0px -2px 5px 1px;
-    width: 8px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .top-profile-menu{
     position: absolute;
     right: -20px;
     top: 38px;
     background: $colorWhite;
     width: 249px;
+    display:none;
     &:before{
       position: absolute;
       pointer-events: none;
@@ -303,6 +289,7 @@ ul{
 }
 .tab-content{
   margin: 20px 0 30px 0;
+  //display: none;
 }
 .tab-inner-content{
   border: 1px solid #f1f1f1;
@@ -316,7 +303,7 @@ ul{
 }
 .tab-item {
   display: grid;
-  grid-template-columns: 42% 17% 13% 20% 10%;
+  grid-template-columns: 40% 17% 13% 20% 10%;
   .item{
     position: relative;
     margin: 0 5px;
@@ -771,15 +758,36 @@ ul{
     }
   }
 }
-@media screen and (max-width: 550px){
-  .content{
+@media screen and (max-width: 550px) {
+  .content {
     width: 100%;
   }
-  .tab-item{
-    .tab-item-writers-info{
-      .online{
+  .tab-item {
+    .tab-item-writers-info {
+      .online {
         left: 55%;
       }
     }
+    .tab-item-writers-info{
+      .writer-name{
+        font-size: 10px;
+      }
+    }
+    .tab-item-deadline {
+      .deadline-title, .deadline-date {
+        font-size: 10px;
+      }
+    }
+    .tab-item-progress{
+      .progress-title{
+        font-size: 10px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .tab-item{
+    grid-template-columns: 23% 23% 29% 23%;
   }
 }
