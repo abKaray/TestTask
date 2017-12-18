@@ -78,6 +78,10 @@ ul {
     margin-left: 54px;
     font-size: 14px;
     font-weight: 700; }
+    .header li a {
+      transition: .5s all; }
+      .header li a:hover {
+        color: #1564c0; }
   .header .balance {
     display: inline-block;
     font-size: 11px;
@@ -97,30 +101,13 @@ ul {
     position: relative;
     margin: 1px 0 0 20px;
     cursor: pointer; }
-  .header .top-profile-img {
-    background: #f7f7f7;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    position: relative;
-    border-radius: 20px;
-    display: inline-block; }
-    .header .top-profile-img img {
-      padding-top: 7px; }
-  .header .top-profile-arrow {
-    background-image: url("../img/arrow.png");
-    height: 5px;
-    margin: 0px -2px 5px 1px;
-    width: 8px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover; }
   .header .top-profile-menu {
     position: absolute;
     right: -20px;
     top: 38px;
     background: #fff;
-    width: 249px; }
+    width: 249px;
+    display: none; }
     .header .top-profile-menu:before {
       position: absolute;
       pointer-events: none;
@@ -268,7 +255,7 @@ ul {
 
 .tab-item {
   display: grid;
-  grid-template-columns: 42% 17% 13% 20% 10%; }
+  grid-template-columns: 40% 17% 13% 20% 10%; }
   .tab-item .item {
     position: relative;
     margin: 0 5px;
@@ -613,6 +600,15 @@ ul {
     width: 100%; }
 
   .tab-item .tab-item-writers-info .online {
-    left: 55%; } }
+    left: 55%; }
+  .tab-item .tab-item-writers-info .writer-name {
+    font-size: 10px; }
+  .tab-item .tab-item-deadline .deadline-title, .tab-item .tab-item-deadline .deadline-date {
+    font-size: 10px; }
+  .tab-item .tab-item-progress .progress-title {
+    font-size: 10px; } }
+@media screen and (max-width: 400px) {
+  .tab-item {
+    grid-template-columns: 23% 23% 29% 23%; } }
 
 /*# sourceMappingURL=style.css.map */
