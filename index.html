@@ -16,7 +16,6 @@
         </p>
     </div>
 </div>
-
 <header class="header">
     <div class="header-inner">
         <div class="logo">
@@ -43,10 +42,7 @@
             </div>
         <!--Mobile menu end-->
         <div class="top-profile-link">
-                <div class="top-profile-img">
-                    <img src="img/user.png" alt="Image_profile"/>
-                </div>
-                <div class="top-profile-arrow"></div>
+            <img src="img/user.png" />
             <div class="top-profile-menu">
                 <a href="#" class="top-profile-item email">someemail@mail.com</a>
                 <a href="#" class="top-profile-item profile">Profile & Settings</a>
@@ -90,9 +86,9 @@
     <div class="content-body">
         <div class="tabs">
             <ul>
-                <li class="tab active"><span>Recent</span></li>
-                <li class="tab"><span>Finished</span></li>
-                <li class="tab"><span>Canceled</span></li>
+                <li id="recent" class="tab active"><span>Recent</span></li>
+                <li id="finished" class="tab"><span>Finished</span></li>
+                <li id="canceled" class="tab"><span>Canceled</span></li>
             </ul>
         </div>
         <div class="tab-content">
@@ -156,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-inner-content">
+            <div id="cancel" class="tab-inner-content">
                 <div class="tab-item">
                     <div class="item tab-item-name">
                         What is the State Regulations?
@@ -275,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-inner-content">
+            <div id="finish" class="tab-inner-content">
                 <div class="tab-item">
                     <div class="item tab-item-name">
                         The last!
